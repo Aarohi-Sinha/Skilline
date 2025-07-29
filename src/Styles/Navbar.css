@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: absolute;
+  right:20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navitems{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4.5vw;
+}
+
+a{
+    text-decoration: none;
+    color: #252641;
+    font-size: 1.25vw;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+    width:7.5vw;
+    height:3vw;
+    border-radius: 32px;
+    font-size: 1.25vw;
+    border: none;
+}
+
+.login{
+    color: #6C6C6C;
+    background-color: #FFFFFF;
+}
+
+.signup{
+  color: #FFFFFF;
+  background-color: #F48C06;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  cursor: pointer;
+}
+
+@media (min-width: 1600px) {
+  button{
+    width: 7vw;
+    border-radius: 2vw;
+    height: 3vw;
+  }
+}
+@media (max-width: 450px ) {
+  a{
+    font-size: 2vw;}
+}
+
+@media (min-width:426px) and (max-width:859px){
+  .hamburger{
+    height:16vw !important;
+    transform: translateY(40%);
+  }
+  img{
+    width:17vw !important ;
+    height:10vw !important ;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 860px) {
+  nav{
+    padding: 15px;
+  }
+
+  a{
+    font-size: 2.2vw;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navitems {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0.05);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 65px 20px 60px 25px;
+    gap: 1.5rem;
+    backdrop-filter: blur(24px);
+  }
+
+  .navitems.show {
+    display: flex;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .login, .signup {
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .link-login, .link-signup {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 32px;
+  }
+
+  img{
+    width: 22vw;
+    height: 15vw;
+  }
+}
+
+
