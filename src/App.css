@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -30,8 +31,6 @@
   color:#FFFFFF;
   border-radius: 6vw;
 }
-
-
 
 @media (min-width:860px){
   .herosection{
@@ -80,8 +79,367 @@
   display: flex;
   gap:4vw;
   justify-content: center;
-  @media (max-width:568px) {
+  @media (max-width:768px) {
     flex-direction: column;
     align-items: center;
+    gap:8vw
+  }
+}
+
+.users{
+  margin-top: 4vw;
+  display:flex;
+  gap:4vw;
+  justify-content:center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap:8vw
+  }
+}
+
+.instructors, .students{
+  width:min(450px,36vw);
+  height: min(300px,24vw);
+  background-size:cover;
+  border-radius:min(16px, 2.6vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    width:60vw;
+    height:40vw;
+  }
+}
+
+.instructors p, .students p{
+  font-size: max(12px,1.8vw);
+  font-weight: 600;
+  color:#FFFFFF;
+}
+
+.instructors button, .students button{
+  width:min(24vw,220px);
+  height:min(55px,5vw);
+  background-color:transparent;
+  border:1px solid #FFFFFF;
+  color:#FFFFFF;
+  border-radius: min(50px,4vw);
+  font-size: min(2vw,18px);
+}
+
+.students button{
+  background-color: rgba(35,189,238,0.9);
+  border: none;
+}
+
+.classroom, .tools, .quiz, .class, .discuss, .platform{
+  margin-top: 15vw !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8vw;
+  @media (max-width:768px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width:75vw;
+    gap:0vw
+  }
+}
+
+.tools, .class{
+  @media (max-width:768px){
+    flex-direction: column-reverse;
+  }
+}
+
+.classroom p, .tools p, .quiz p, .class p, .discuss p, .platform p{
+  font-size:min(3.2vw,24px);
+  text-align:left;
+  margin-bottom: 12px;
+  width:35vw;
+  @media (max-width:768px) {
+    width:60vw
+  }
+}
+
+.classroom img, .tools img{
+  width:30vw;
+  height: 20vw;
+  @media (max-width:768px) {
+    width:60vw !important;
+    height:38vw !important;
+  }
+  @media (min-width:769px) and (max-width:1339px) {
+    height: 36vw !important;
+    width: 38vw !important;
+  }
+}
+
+.quiz img, .class img, .discuss img{
+  width:40vw;
+  height: 30vw;
+  @media (max-width:768px) {
+    width:64vw !important;
+    height:40vw !important;
+  }
+  @media (min-width:769px) and (max-width:1339px) {
+    height: 40vw !important;
+    width: 38vw !important;
+  }
+}
+
+.platform img{
+  width:30vw;
+  height:20vw;
+  @media (max-width:768px) {
+    height: 40vw !important;;
+    width:30vw !important;
+  }
+  @media (min-width:769px) and (max-width:1339px) {
+    height: 55vw !important;
+    width: 38vw !important;
+  }
+}
+
+.news {
+  display: flex;
+  gap: 2vw;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2vw 1vw;
+}
+
+.news1 {
+  width: 28vw;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.news-right {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.news1 img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 1.5vw;
+  border-radius: 8px;
+}
+
+.news1 span {
+  background-color: #F4C467;
+  padding: 0.6vw 1.5vw;
+  border-radius: 50px;
+  font-size: min(1.5vw, 14px);
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 1vw;
+  font-weight: 500;
+}
+
+.news2, .news3, .news4 {
+  display: flex;
+  gap: 1.5vw;
+  align-items: flex-start;
+}
+
+.news2 img, .news3 img, .news4 img {
+  height: max(5vw, 80px);
+  width: max(8vw, 120px);
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.news2 div, .news3 div, .news4 div {
+  flex: 1;
+}
+
+.news2 p, .news3 p, .news4 p {
+  margin: 0 0 0.5vw 0;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  .news {
+    flex-direction: column;
+    gap: 3vw;
+    padding: 3vw 2vw;
+  }
+
+  .news1,
+  .news-right {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .news1 img {
+    margin-bottom: 2vw;
+  }
+
+  .news1 span {
+    padding: 1.5vw 3vw;
+    font-size: 14px;
+    margin-bottom: 2vw;
+  }
+
+  .news1,
+  .news2,
+  .news3,
+  .news4 {
+    flex-direction: column;
+    gap: 2vw;
+    margin-bottom: 3vw;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .news2, .news3, .news4 {
+    gap: 3vw;
+  }
+
+  .news2 img, .news3 img, .news4 img {
+    height: max(12vw, 100px);
+    width: max(18vw, 150px);
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 550px) {
+  .news {
+    flex-direction: column;
+    gap: 3vw;
+    padding: 4vw 2vw;
+    align-items: center;
+  }
+
+  .news1,
+  .news-right {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .news1,
+  .news2,
+  .news3,
+  .news4 {
+    flex-direction: column;
+    gap: 2vw;
+    margin-bottom: 3vw;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .news1 img,
+  .news2 img,
+  .news3 img,
+  .news4 img {
+    height: auto;
+    width: 100%;
+    max-width: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2vw;
+  }
+
+  .news1 span {
+    padding: 6px 12px;
+    font-size: 13px;
+    margin-bottom: 2vw;
+    display: inline-block;
+  }
+
+  .news1 p,
+  .news2 p,
+  .news3 p,
+  .news4 p,
+  .news1 a {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Extra small mobile - 375px phones */
+@media (max-width: 375px) {
+  .news {
+    padding: 3vw 2vw;
+  }
+
+  .news1,
+  .news-right {
+    width: 90vw;
+  }
+
+  .news1 img,
+  .news2 img,
+  .news3 img,
+  .news4 img {
+    height: 100px;
+    max-width: 180px;
+  }
+
+  .news1 p,
+  .news2 p,
+  .news3 p,
+  .news4 p,
+  .news1 a {
+    font-size: 12.5px;
+  }
+
+  .news1 span {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
+
+/* Very small phones - 320px and below */
+@media (max-width: 320px) {
+  .news {
+    gap: 2vw;
+    padding: 3vw 1vw;
+  }
+
+  .news1,
+  .news-right {
+    width: 92vw;
+  }
+
+  .news1 img,
+  .news2 img,
+  .news3 img,
+  .news4 img {
+    height: 80px;
+    max-width: 160px;
+  }
+
+  .news1 p,
+  .news2 p,
+  .news3 p,
+  .news4 p,
+  .news1 a {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .news1 span {
+    font-size: 10px;
+    padding: 4px 8px;
+    margin-bottom: 1.5vw;
+  }
+
+  .news2,
+  .news3,
+  .news4 {
+    gap: 1vw;
+    margin-bottom: 2vw;
   }
 }

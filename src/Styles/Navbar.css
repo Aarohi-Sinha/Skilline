@@ -25,23 +25,23 @@ nav{
 }
 
 a{
-    text-decoration: none;
-    color: #252641;
-    font-size: 1.25vw;
+  text-decoration: none;
+  color: #252641;
+  font-size: 1.25vw;
 }
 
 button{
-    font-family: 'Poppins', sans-serif;
-    width:7.5vw;
-    height:3vw;
-    border-radius: 32px;
-    font-size: 1.25vw;
-    border: none;
+  font-family: 'Poppins', sans-serif;
+  width:7.5vw;
+  height:3vw;
+  border-radius: 32px;
+  font-size: 1.25vw;
+  border: none;
 }
 
 .login{
-    color: #6C6C6C;
-    background-color: #FFFFFF;
+  color: #6C6C6C;
+  background-color: #FFFFFF;
 }
 
 .signup{
@@ -147,5 +147,3 @@ button{
     height: 15vw;
   }
 }
-
-
