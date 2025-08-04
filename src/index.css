@@ -13,3 +13,24 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+button,
+.card {
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover,
+.card:hover {
+  transform: scale(1.2);
+}
+
+a {
+  color: #696984;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #F48C06;
+}
+

@@ -38,6 +38,12 @@ input{
     background-color: transparent;
 }
 
+input:focus {
+  outline: none;
+  border-color: #F48C06;
+  box-shadow: 0 0 0 3px rgba(244, 140, 6, 0.1);
+  transform: scale(1.02);
+}
 
 input::placeholder{
     font-size: min(3vw,18px);

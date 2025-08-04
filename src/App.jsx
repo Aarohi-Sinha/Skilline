@@ -20,10 +20,14 @@ import disCuss from "./Assets/discuss.svg"
 import platForm from "./Assets/platform.svg"
 import Footer from "./Components/Footer.jsx"
 import Testimonial from "./Components/Testimonial.jsx"
+import News from "./Components/News.jsx"
 import neWs1 from "./Assets/news1.svg"
 import neWs2 from "./Assets/news2.svg"
 import neWs3 from "./Assets/news3.svg"
 import neWs4 from "./Assets/news4.svg"
+import bIll from "./Assets/bill.svg"
+import caleNdar from "./Assets/calendar.svg"
+import custOmer from "./Assets/customer.svg"
 
 function App() {
   return (
@@ -62,14 +66,17 @@ function App() {
 
       <div className="cardgrp">
         <Card
+          img = {bIll}
           title="Online Billing, Invoicing, & Contracts"
           desc="Simple and secure control of your oragnization's financial and legal transactions. Send customized invoices and contracts."
         />
         <Card
+          img = {caleNdar}
           title="Easy Scheduling & Attendance Tracking"
           desc="Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance"
         />
         <Card className="customer"
+          img = {custOmer}
           title="Customer Tracking"
           desc="Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization "
         />
@@ -196,50 +203,43 @@ function App() {
       <Testimonial />
 
       <p style={{ color: `#2F327D`, fontSize: `min(3.2vw,24px)`, textAlign: `center`, paddingTop: `5vw`, margin: `1.5vw auto`, fontWeight: `bold` }}>Latest News and Resources</p>
-      <p style={{ color: `#696984`, fontSize: `min(2.6vw,1.2rem)`, width: `45vw`, margin: `0 auto`, textAlign: 'center', marginBottom: `5vw` }}>
+      <p style={{ color: `#696984`, fontSize: `min(2.6vw,1.2rem)`, width: `85vw`, margin: `0 auto`, textAlign: 'center', marginBottom: `20px` }}>
         See the developments that have occurred to Skillines in the world
       </p>
 
       <div className="news">
-
-        <div className="news1">
-          <img src={neWs1} />
-          <span>NEWS</span>
-          <p style={{ color: `#252641`, fontWeight: `500`, fontSize: `min(3vw,18px)` }}>Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</p>
-          <p style={{ color: `#696984`, fontSize: `min(2vw,16px)` }}>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
-          <a href="#" style={{ fontSize: `min(2vw,16px)`, color: `#696984`, textDecorationLine: `underline` }}>Read more</a>
-        </div>
-
-        <div style={{ display: `flex`, flexDirection: `column`, gap: `16px`,margin:`0 auto` }}>
-
-          <div className="news2">
-            <img src={neWs2} />
-            <div>
-              <p style={{ color: `#252641`, fontWeight: `500`, fontSize: `min(2vw,16px)`, marginTop: `2w` }}>Class Technologies Inc. Closes $30 Million Series A Financing to Meet High Demand</p>
-              <p style={{ color: `#696984`, fontSize: `min(2vw,16px)` }}>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
-            </div>
+          <News
+              img={neWs1}
+              category = {"NEWS"}
+              title = {"Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution"}
+              desc= {"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively..."}
+          />
+          <div className="newsright">
+            <News
+              
+              img={neWs2}
+              category = {"PRESS RELEASE"}
+              title = {"Class Technologies Inc. Closes $30 Million Series A Financing to Meet High Demand"}
+              desc= {"Class Technologies Inc., the company that created Class,..."}
+            />
+            <News 
+              
+              img={neWs3}
+              category = {"NEWS"}
+              title = {"Zoom’s earliest investors are betting millions on a better Zoom for schools"}
+              desc= {"Zoom was never created to be a consumer product. Nonetheless, the..."}
+            />
+            <News 
+              img={neWs4}
+              category = {"NEWS"}
+              title = {"Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms"}
+              desc= {"This year, investors have reaped big financial returns from betting on Zoom..."}
+            />
           </div>
-
-          <div className="news3">
-            <img src={neWs3} />
-            <div>
-              <p style={{ color: `#252641`, fontWeight: `500`, fontSize: `min(2vw,16px)`, marginTop: `2w` }}>Zoom’s earliest investors are betting millions on a better Zoom for schools</p>
-              <p style={{ color: `#696984`, fontSize: `min(2vw,16px)` }}>Zoom was never created to be a consumer product. Nonetheless, the...</p>
-            </div>
-          </div>
-
-          <div className="news4">
-            <img src={neWs4} />
-            <div>
-              <p style={{ color: `#252641`, fontWeight: `500`, fontSize: `min(2vw,16px)`, marginTop: `2vw` }}>Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms</p>
-              <p style={{ color: `#696984`, fontSize: `min(2vw,16px)` }}>This year, investors have reaped big financial returns from betting on Zoom...</p>
-            </div>
-          </div>
-        </div>
       </div>
 
       <Footer />
-
+      
     </>
   );
 };

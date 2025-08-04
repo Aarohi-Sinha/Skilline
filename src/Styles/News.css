@@ -1,0 +1,132 @@
+.newscard{
+    width: 65vw;
+    text-align: left;
+}
+
+.newscard a{
+    font-size: min(2.2vw,14px);
+    color: #696984;
+    text-decoration: underline;
+    
+}
+
+.newsimg{
+    display: block;
+    width:min(65vw,400px);
+    height: min(50vw,300px);
+}
+
+.newscategory{
+    background-color: #F4C467;
+    padding: 0.6vw 1.5vw;
+    border-radius: 50px;
+    font-size: min(2vw, 14px);
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 1vw;
+    font-weight: 500;
+}
+
+.newstitle{
+    color: #252641;
+    font-weight: 500;
+    font-size: min(2.5vw,16px);
+    margin-top: 2vw
+}
+
+.newsdesc{
+    color: #696984;
+    font-size: min(2.5vw,16px)
+}
+
+@media (min-width: 426px) and (max-width: 800px) {
+    .newsimg {
+        width: 500px !important;
+        height: 400px !important;
+    }
+}
+
+@media (min-width: 800px) {
+  /* Main news item (first child - left side) */
+  .news > .newscard:first-child .newsimg {
+    width: 100%; /* Full width for first image */
+    height: 200px; /* Smaller than mobile for better proportions */
+  }
+
+  .news > .newscard:first-child .newstitle {
+    font-size: 20px;
+  }
+
+  .news > .newscard:first-child .newsdesc {
+    font-size: 16px;
+  }
+
+  .news > .newscard:first-child .newscategory {
+    padding: 0.6rem 1.2rem;
+    font-size: 13px;
+    margin-bottom: 0.8rem;
+  }
+
+  /* All news items in the right container (smaller) */
+  .newsright .newsimg {
+    width: 100%;
+    max-width: 200px; /* Constrain width for right side images */
+    height: 120px; /* Even smaller for right side */
+  }
+
+  .newsright .newstitle {
+    font-size: 14px;
+    margin-top: 0.8rem;
+  }
+
+  .newsright .newsdesc {
+    font-size: 12px;
+  }
+
+  .newsright .newscategory {
+    padding: 0.4rem 0.8rem;
+    font-size: 11px;
+    margin-bottom: 0.6rem;
+  }
+
+  .newsright a {
+    font-size: 11px;
+  }
+}
+
+/* Extra large screens - slightly bigger but still reasonable */
+@media (min-width: 1024px) {
+  .news > .newscard:first-child .newsimg {
+    width: 100%;
+    max-width: 400px; /* Slightly larger max width for bigger screens */
+    height: 250px; /* Still smaller than mobile */
+  }
+
+  .news > .newscard:first-child .newstitle {
+    font-size: 22px;
+  }
+
+  .news > .newscard:first-child .newsdesc {
+    font-size: 18px;
+  }
+
+  .newsright .newsimg {
+    height: 140px;
+  }
+
+  .newsright .newstitle {
+    font-size: 16px;
+  }
+
+  .newsright .newsdesc {
+    font-size: 14px;
+  }
+
+  .newsright .newscategory {
+    font-size: 12px;
+  }
+
+  .newsright a {
+    font-size: 12px;
+  }
+}
