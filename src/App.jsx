@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css"
 import Navbar from "./Components/Navbar";
 import bgImage from './Assets/header-bg.svg';
-import { FaPlay } from "react-icons/fa6";
+import plAy from "./Assets/play.svg"
 import gooGle from './Assets/google.svg'
 import netFlix from './Assets/netflix.svg'
 import airBnb from './Assets/airbnb.svg'
@@ -41,7 +41,10 @@ function App() {
           <p className="desc">Skilline is an interesting platform that will teach you in more an interactive way</p>
           <div style={{ display: `flex`, gap: `2vw`, alignItems: `center` }}>
             <button className="join">Join for free</button>
-            <button style={{ width: `4.2vw`, height: `4.2vw`, backgroundColor: `#FFFFFF` }}><FaPlay color="#23BDEE" /></button>
+            <button style={{backgroundColor:`transparent`,width:`24px`,height:`24px`,borderRadius:`50px`}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24" height="24" style={{cursor: 'pointer'}}>
+              <circle cx="10" cy="10" r="10" fill="white"/>
+              <path d="M8 6L8 14L14 10Z" fill="#23BDEE"/>
+            </svg></button>
             <span style={{ color: `#252641`, fontSize: `1.2vw` }}>Watch how it works</span>
           </div>
         </div>
