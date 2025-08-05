@@ -43,12 +43,16 @@ input:focus {
   border-color: #F48C06;
   box-shadow: 0 0 0 3px rgba(244, 140, 6, 0.1);
   transform: scale(1.02);
-  color:transparent;
 }
 
 input::placeholder{
     font-size: min(3vw,18px);
     padding-left: 16px;
+    transition: opacity 0.2s ease;
+}
+
+input:focus::placeholder {
+  opacity: 0;
 }
 
 .subscribe{
