@@ -41,7 +41,7 @@ function App() {
           <p className="desc">Skilline is an interesting platform that will teach you in more an interactive way</p>
           <div style={{ display: `flex`, gap: `2vw`, alignItems: `center` }}>
             <button className="join">Join for free</button>
-            <button style={{backgroundColor:`transparent`,width:`24px`,height:`24px`,borderRadius:`50px`}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24" height="24" style={{cursor: 'pointer'}}>
+            <button style={{backgroundColor:`transparent`,width:`24px`,height:`24px`,borderRadius:`50px`}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="32" height="32" style={{cursor: 'pointer'}}>
               <circle cx="10" cy="10" r="10" fill="white"/>
               <path d="M8 6L8 14L14 10Z" fill="#23BDEE"/>
             </svg></button>
