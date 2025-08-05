@@ -2,6 +2,7 @@
     width: min(800px,18vw);
     height:120px;
     padding: 4.5vw;
+    padding-bottom: 0px;
     box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
     border-radius:min(3.5vw, 20px);
     @media (max-width: 768px) {
